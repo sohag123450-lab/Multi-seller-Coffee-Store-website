@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+span a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    margin-left: 20px;
+    display: inline-block;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+span a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+
+.form-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+.heading h1 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.img-box {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.img-box img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #ddd;
+}
+
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.col {
+    flex: 1;
+    min-width: 280px;
+}
+
+
+.input-field {
+    margin-bottom: 20px;
+}
+
+.input-field p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.input-field p span {
+    color: red;
+}
+
+.input-field .box {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+}
+
+.input-field .box:focus {
+    border-color: #333;
+}
+
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .flex {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+}
